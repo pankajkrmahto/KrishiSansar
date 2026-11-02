@@ -3191,7 +3191,7 @@ button {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 290px;
+    width: min(290px, 85vw);
     height: 100vh;
     background: #ffffff;
     flex-direction: column;
@@ -3342,6 +3342,158 @@ button {
   }
   .fab-tooltip {
     display: none;
+  }
+}
+
+/* Extra Small Phones (<= 575px) */
+@media (max-width: 575px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .topbar {
+    padding: 6px 0;
+  }
+
+  .topbar-right {
+    gap: 8px;
+  }
+
+  .lang-switch {
+    padding: 5px 10px;
+  }
+
+  .navbar {
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .brand-logo {
+    min-width: 0;
+  }
+
+  .logo-img-wrapper {
+    height: 48px;
+  }
+
+  .logo-img {
+    height: 46px;
+  }
+
+  .header-actions {
+    gap: 8px;
+  }
+
+  .header-cart-btn {
+    padding: 7px 10px;
+    gap: 6px;
+  }
+
+  .cart-label {
+    display: none;
+  }
+
+  .header-search-wrapper {
+    position: static;
+  }
+
+  .header-search-dropdown {
+    top: 62px;
+    left: 10px;
+    right: 10px;
+    width: auto;
+  }
+
+  .search-quick-tags {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .quick-tag-btn {
+    padding: 6px 8px;
+    font-size: 0.68rem;
+  }
+
+  .hero-section {
+    padding-top: 20px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  .smart-banner-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .smart-banner-text h3 {
+    font-size: 1.15rem;
+  }
+
+  .feature-pill-card {
+    padding: 18px 14px;
+  }
+}
+
+/* Very Small Phones (<= 420px) */
+@media (max-width: 420px) {
+  .topbar-right {
+    justify-content: flex-end;
+  }
+
+  .lang-text,
+  .lang-tag {
+    display: none;
+  }
+
+  .lang-switch {
+    padding: 5px 8px;
+  }
+
+  .header-cart-btn {
+    min-width: 42px;
+    padding: 7px 9px;
+  }
+
+  .hero-title {
+    font-size: 1.95rem;
+  }
+
+  .hero-badge {
+    font-size: 0.75rem;
+    padding: 6px 12px;
+  }
+
+  .hero-desc {
+    font-size: 1rem;
+  }
+
+  .hero-subtext {
+    font-size: 0.88rem;
+  }
+
+  .hero-image-frame {
+    width: 240px;
+    height: 240px;
+  }
+
+  .floating-pill {
+    font-size: 0.78rem;
+    padding: 10px 12px;
+  }
+
+  .section-tag {
+    font-size: 1rem;
+  }
+
+  .section-header {
+    margin-bottom: 32px;
   }
 }
 
