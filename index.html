@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krishi Sansar - Your Trusted Partner for Agriculture Products, Services & Expert Advice</title>
+  <meta name="description" content="Krishi Sansar is India's leading agricultural platform offering high quality certified seeds, bio-fertilizers, modern farming tools, machinery, and expert crop doctor advice.">
+  <meta name="keywords" content="Krishi Sansar, agriculture, farming, seeds, fertilizers, tractor, crop doctor, soil testing, farmer support, Jharkhand, India">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================================================================
+       TOPBAR (Helpline & Quick Contact)
+       =================================================================== -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="topbar-left">
+        <div class="topbar-item">
+          <span>📞</span>
+          <span>Toll-Free Helpline: <strong>+91 98765 43210</strong> (Mon - Sat, 9AM - 6PM)</span>
+        </div>
+        <div class="topbar-item">
+          <span>📍</span>
+          <span>Ranchi, Jharkhand, India</span>
+        </div>
+      </div>
+      <div class="topbar-right">
+        <div class="topbar-item">
+          <span>✉️</span>
+          <span>info@krishisansar.in</span>
+        </div>
+        <button class="lang-switch" id="langSwitchBtn" title="Switch Language / भाषा बदलें" aria-label="Switch Language">
+          <span class="lang-icon">🌐</span>
+          <span class="lang-text">हिन्दी</span>
+          <span class="lang-tag">A/अ</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       HEADER & NAVIGATION BAR
+       =================================================================== -->
+  <header class="main-header">
+    <div class="container navbar">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="Krishi Sansar Home">
+        <div class="logo-img-wrapper">
+          <!-- Authentic Uploaded Image Logo -->
+          <img src="images/logo.jpg" alt="Krishi Sansar - Agriculture Products, Services & Advice" class="logo-img" id="mainLogoImg">
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu" id="navMenu">
+        <div class="nav-item">
+          <a href="#home" class="nav-link active">Home</a>
+        </div>
+        <div class="nav-item">
+          <a href="#products" class="nav-link">Products</a>
+        </div>
+        <div class="nav-item">
+          <a href="#services" class="nav-link">Services</a>
+        </div>
+        <div class="nav-item">
+          <a href="#advisor" class="nav-link">Expert Advisor</a>
+        </div>
+        <div class="nav-item">
+          <a href="#about" class="nav-link">About</a>
+        </div>
+        <div class="nav-item">
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <!-- Compact Top Search Section -->
+        <div class="header-search-wrapper" id="headerSearchWrapper">
+          <button class="action-btn" id="headerSearchBtn" title="Search Products, Services & Advice" aria-label="Toggle Search">
+            <span class="search-icon-symbol">🔍</span>
+          </button>
+
+          <!-- Compact Floating Top Search Dropdown -->
+          <div class="header-search-dropdown" id="headerSearchDropdown">
+            <div class="search-input-box">
+              <span class="search-box-icon">🔍</span>
+              <input 
+                type="text" 
+                id="headerSearchInput" 
+                class="header-search-input" 
+                placeholder="Search seeds, fertilizers, tools, advisor..." 
+                autocomplete="off"
+              >
+              <button type="button" class="search-clear-btn" id="searchClearBtn" title="Clear or close" aria-label="Close search">✕</button>
+            </div>
+
+            <!-- Quick Filter Tags -->
+            <div class="search-quick-tags">
+              <span class="quick-tag-label">Popular:</span>
+              <button type="button" class="quick-tag-btn" data-query="Seeds">🌾 Seeds</button>
+              <button type="button" class="quick-tag-btn" data-query="Fertilizers">🧪 Fertilizer</button>
+              <button type="button" class="quick-tag-btn" data-query="Tools">🛠️ Tools</button>
+              <button type="button" class="quick-tag-btn" data-query="Tractor">🚜 Tractor</button>
+              <button type="button" class="quick-tag-btn" data-query="Soil">🔬 Soil Test</button>
+            </div>
+
+            <!-- Instant Live Results -->
+            <div class="header-search-results" id="headerSearchResults">
+              <p class="search-placeholder-text">Type to search agricultural products, seeds, or advisory...</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Shopping Cart Button -->
+        <button class="header-cart-btn" id="headerCartBtn" title="View Shopping Cart" aria-label="Shopping Cart">
+          <span class="cart-icon">🛒</span>
+          <span class="cart-label">Cart</span>
+          <span class="cart-badge-count" id="headerCartCount">0</span>
+        </button>
+        <!-- Mobile Toggle -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================================
+       1. HOME / HERO SECTION
+       =================================================================== -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Left Content Column -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span>🌱</span>
+            <span>Grow Together • Prosper Together</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="text-krishi">Krishi</span> <span class="text-sansar">Sansar</span>
+          </h1>
+
+          <p class="hero-desc">
+            Your Trusted Partner for Agriculture Products, Services & Expert Advice
+          </p>
+
+          <p class="hero-subtext">
+            Empowering Indian farmers with lab-tested seeds, organic fertilizers, precision agri-tools, and 24/7 scientific guidance for superior crop yield and sustainable prosperity.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#products" class="btn btn-primary" id="shopNowHeroBtn">
+              <span>Shop Now</span>
+              <span>➔</span>
+            </a>
+            <a href="#advisor" class="btn btn-secondary" id="getAdviceHeroBtn">
+              <span>Get Expert Advice</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Visual Column -->
+        <div class="hero-visual">
+          <div class="hero-image-frame">
+            <img 
+              src="images/hero-farmer.jpg" 
+              alt="Happy Indian Farmer with green crops giving thumbs up - Krishi Sansar" 
+              class="hero-farmer-img"
+              id="heroFarmerImg"
+            >
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="floating-pill floating-pill-left">
+            <div class="pill-icon">★</div>
+            <div>
+              <div style="font-size:0.7rem; color:var(--text-muted);">Trusted Platform</div>
+              <div>4.8/5 (50k+ Farmers)</div>
+            </div>
+          </div>
+
+          <div class="floating-pill floating-pill-right">
+            <div class="pill-icon">🌾</div>
+            <div>
+              <div style="font-size:0.7rem; color:var(--text-muted);">Quality Assured</div>
+              <div>100% Certified Inputs</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 4-Card Ribbon -->
+      <div class="hero-features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-pill-card" onclick="location.href='#products'">
+          <div class="feature-icon-circle">🌱</div>
+          <h4 class="feature-title">Premium Seeds</h4>
+          <p class="feature-sub">High Germination & Purity</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-pill-card" onclick="location.href='#products'">
+          <div class="feature-icon-circle">🧪</div>
+          <h4 class="feature-title">Quality Fertilizers</h4>
+          <p class="feature-sub">Organic & NPK Bio-Boosters</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-pill-card" onclick="location.href='#products'">
+          <div class="feature-icon-circle">🚜</div>
+          <h4 class="feature-title">Modern Tools</h4>
+          <p class="feature-sub">Durable, Ergonomic & Tech</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-pill-card" onclick="location.href='#advisor'">
+          <div class="feature-icon-circle">🎧</div>
+          <h4 class="feature-title">Expert Advice</h4>
+          <p class="feature-sub">24/7 Crop Doctor Help</p>
+        </div>
+      </div>
+
+      <!-- Smart Farming Floating Banner Strip -->
+      <div class="smart-farming-banner">
+        <div class="smart-banner-content">
+          <div class="smart-banner-icon">🚜</div>
+          <div class="smart-banner-text">
+            <h3>Smart Farming for a Better Tomorrow</h3>
+            <p>Affordable tech, mechanization & weather-smart advisory for modern Indian agriculture.</p>
+          </div>
+        </div>
+        <a href="#services" class="btn btn-secondary" style="background:#ffffff; color:#14532d; font-size:0.88rem; padding:10px 22px;">
+          Explore Solutions ➔
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       2. PRODUCTS SECTION
+       =================================================================== -->
+  <section class="products-section" id="products">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <span class="leaf-icon">🌿</span>
+          <span>Our Products</span>
+          <span class="leaf-icon">🌿</span>
+        </div>
+        <h2 class="section-subtitle">
+          High Quality Agricultural Products for Better Yield
+        </h2>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="product-filter-tabs">
+        <button class="tab-btn active" data-filter="all">All Products</button>
+        <button class="tab-btn" data-filter="seeds">🌾 Seeds</button>
+        <button class="tab-btn" data-filter="fertilizers">🧪 Fertilizers</button>
+        <button class="tab-btn" data-filter="tools">🛠️ Tools</button>
+        <button class="tab-btn" data-filter="machinery">🚜 Machinery</button>
+      </div>
+
+      <!-- 4 Main Product Cards Grid (Matching Mockup) -->
+      <div class="products-grid">
+        <!-- 1. Seeds -->
+        <div class="product-card" data-category="seeds">
+          <div class="product-img-box">
+            <span class="product-badge bestseller" id="badgeSeeds">Bestseller</span>
+            <img 
+              src="images/product_seeds.jpg"
+              alt="Certified Agricultural Seeds - Wheat, Rice, Maize" 
+              class="product-img"
+            >
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Seeds</h3>
+            <p class="product-desc">Wheat, Rice, Maize & More certified hybrid varieties for bumper harvests.</p>
+            <div class="product-meta">
+              <span class="product-price">From ₹299 / 5kg</span>
+              <span class="product-rating">★ 4.9</span>
+            </div>
+            <div class="product-card-actions">
+              <button class="product-btn view-product-btn" data-product="seeds">
+                <span>View Details</span>
+                <span>➔</span>
+              </button>
+              <button class="product-add-cart-btn" data-product="seeds" title="Add Seeds to Cart">
+                <span>+ Cart 🛒</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Fertilizers -->
+        <div class="product-card" data-category="fertilizers">
+          <div class="product-img-box">
+            <span class="product-badge" id="badgeFert">Organic</span>
+            <img 
+              src="images/product_fertilizer.jpg" 
+              alt="Bio-Organic & NPK Chemical Fertilizers" 
+              class="product-img"
+            >
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Fertilizers</h3>
+            <p class="product-desc">Organic & Chemical bio-nutrients, vermicompost & micro-mineral packs.</p>
+            <div class="product-meta">
+              <span class="product-price">From ₹450 / 10kg</span>
+              <span class="product-rating">★ 4.8</span>
+            </div>
+            <div class="product-card-actions">
+              <button class="product-btn view-product-btn" data-product="fertilizers">
+                <span>View Details</span>
+                <span>➔</span>
+              </button>
+              <button class="product-add-cart-btn" data-product="fertilizers" title="Add Fertilizer to Cart">
+                <span>+ Cart 🛒</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Tools -->
+        <div class="product-card" data-category="tools">
+          <div class="product-img-box">
+            <span class="product-badge" id="badgeTools">Durable</span>
+            <img 
+              src="images/product_tools.jpg" 
+              alt="Modern Farming Tools - Spade, Hoe, Sickle" 
+              class="product-img"
+            >
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Tools</h3>
+            <p class="product-desc">Spade, Hoe, Sickle & More forged rust-proof ergonomic field tools.</p>
+            <div class="product-meta">
+              <span class="product-price">From ₹380 / unit</span>
+              <span class="product-rating">★ 4.7</span>
+            </div>
+            <div class="product-card-actions">
+              <button class="product-btn view-product-btn" data-product="tools">
+                <span>View Details</span>
+                <span>➔</span>
+              </button>
+              <button class="product-add-cart-btn" data-product="tools" title="Add Tools to Cart">
+                <span>+ Cart 🛒</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Machinery -->
+        <div class="product-card" data-category="machinery">
+          <div class="product-img-box">
+            <span class="product-badge bestseller" id="badgeMach">Agri-Tech</span>
+            <img 
+              src="images/product_tractor.jpg" 
+              alt="Agricultural Machinery - Tractors & Rotavators" 
+              class="product-img"
+            >
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Machinery</h3>
+            <p class="product-desc">Tractors, Rotavators & Power Tillers available for purchase & rental.</p>
+            <div class="product-meta">
+              <span class="product-price">Rent ₹499 / hr</span>
+              <span class="product-rating">★ 4.9</span>
+            </div>
+            <div class="product-card-actions">
+              <button class="product-btn view-product-btn" data-product="machinery">
+                <span>View Details</span>
+                <span>➔</span>
+              </button>
+              <button class="product-add-cart-btn" data-product="machinery" title="Book Machinery in Cart">
+                <span>+ Cart 🛒</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Promo Banner Strip -->
+      <div class="products-promo-banner">
+        <div class="promo-banner-left">
+          <span class="promo-leaf-icon">🌿</span>
+          <div>
+            <h3 class="promo-banner-title">Best Quality Products at Affordable Prices</h3>
+            <p class="promo-banner-sub">Direct factory-to-farm dispatch with fast delivery & cash on delivery (COD).</p>
+          </div>
+        </div>
+        <div class="promo-banner-center">
+          <button class="btn btn-primary" onclick="showToast('Loading full product catalog (1,200+ items)...', 'info')">
+            <span>Shop All Products</span>
+            <span>➔</span>
+          </button>
+        </div>
+        <div class="promo-banner-right">
+          <img src="images/product_tractor.jpg" alt="Farm Tractor in Green Field" class="promo-tractor-thumb">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       3. SERVICES SECTION
+       =================================================================== -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <span class="leaf-icon">🌿</span>
+          <span>Our Services</span>
+          <span class="leaf-icon">🌿</span>
+        </div>
+        <h2 class="section-subtitle">
+          <span class="sparkle">✦</span> Complete Support for Farmers <span class="sparkle">✦</span>
+        </h2>
+      </div>
+
+      <!-- 6 Service Cards Grid (Matching Mockup) -->
+      <div class="services-grid">
+        <!-- 1. Crop Advisory -->
+        <div class="service-card" onclick="showToast('Crop Advisory: Real-time weather & sowing calendar loaded.', 'info')">
+          <div class="service-icon-box">🌱</div>
+          <h3 class="service-title">Crop Advisory</h3>
+          <p class="service-desc">Get expert advice for better yield with customized crop calendars, pest warning systems, and climate adaptation tips.</p>
+          <span class="service-link">Learn More ➔</span>
+        </div>
+
+        <!-- 2. Order Booking -->
+        <div class="service-card" onclick="showToast('Order Booking: Direct rural doorstep delivery service.', 'info')">
+          <div class="service-icon-box">🛒</div>
+          <h3 class="service-title">Order Booking</h3>
+          <p class="service-desc">Book seeds, tools & services easily via our platform or WhatsApp with guaranteed doorstep delivery across rural pin codes.</p>
+          <span class="service-link">Book Now ➔</span>
+        </div>
+
+        <!-- 3. Soil Testing -->
+        <div class="service-card" onclick="showToast('Soil Testing: 12-parameter laboratory test available.', 'info')">
+          <div class="service-icon-box">🔬</div>
+          <h3 class="service-title">Soil Testing</h3>
+          <p class="service-desc">Know your soil, grow better. Accurate laboratory testing of N-P-K, pH levels, organic carbon, and micro-nutrient ratios.</p>
+          <span class="service-link">Test Soil ➔</span>
+        </div>
+
+        <!-- 4. Disease Control -->
+        <div class="service-card" onclick="showToast('Disease Control: Instant diagnosis & remedy plans.', 'info')">
+          <div class="service-icon-box">🛡️</div>
+          <h3 class="service-title">Disease Control</h3>
+          <p class="service-desc">Protect your crops with expert tips. Early identification of leaf blight, stem borers, and root rot with organic remedies.</p>
+          <span class="service-link">Protect Crops ➔</span>
+        </div>
+
+        <!-- 5. Irrigation Solutions -->
+        <div class="service-card" onclick="showToast('Irrigation: Drip & sprinkler subsidy assistance.', 'info')">
+          <div class="service-icon-box">💧</div>
+          <h3 class="service-title">Irrigation Solutions</h3>
+          <p class="service-desc">Smart water solutions for farming. High efficiency drip kits, solar pumps, and automated micro-sprinkler installations.</p>
+          <span class="service-link">Save Water ➔</span>
+        </div>
+
+        <!-- 6. Farming Training -->
+        <div class="service-card" onclick="showToast('Training: Next live farmer workshop this Saturday.', 'info')">
+          <div class="service-icon-box">👨‍🏫</div>
+          <h3 class="service-title">Farming Training</h3>
+          <p class="service-desc">Learn modern farming techniques through practical field demonstrations, drone spraying workshops, and organic certification guides.</p>
+          <span class="service-link">Join Training ➔</span>
+        </div>
+      </div>
+
+      <!-- Healthy Soil... Healthy Harvest Banner -->
+      <div class="healthy-soil-banner">
+        <div class="healthy-soil-quote">
+          <h3>"Healthy Soil... Healthy Harvest..."</h3>
+          <p>Nurturing the mother earth to ensure prosperous families and food security for all of India.</p>
+        </div>
+        <a href="#advisor" class="btn btn-secondary" style="background:#ffffff; color:#14532d; font-size:0.9rem;">
+          Consult Agronomist ➔
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       4. EXPERT ADVISOR SECTION
+       =================================================================== -->
+  <section class="advisor-section" id="advisor">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <span class="leaf-icon">🌿</span>
+          <span>Our Expert Advisor</span>
+          <span class="leaf-icon">🌿</span>
+        </div>
+        <h2 class="section-subtitle">
+          Get Expert Advice from Our Agriculture Experts
+        </h2>
+      </div>
+
+      <!-- Main Doctor Profile & Checklist Card -->
+      <div class="advisor-container-card">
+        <div class="advisor-profile-grid">
+          <!-- Left Column: Doctor Profile -->
+          <div class="doctor-profile-box">
+            <div class="doctor-avatar-wrapper">
+              <img 
+                src="images/doctor_ramesh.jpg" 
+                alt="Dr. Ramesh Kumar - Senior Agriculture Expert" 
+                class="doctor-avatar-img"
+              >
+              <span class="doctor-verified-badge" title="Verified Agriculture Scientist">✔</span>
+            </div>
+            <div class="doctor-details">
+              <h3 class="doctor-name">Dr. Ramesh Kumar</h3>
+              <p class="doctor-designation">Senior Agriculture Expert & Plant Pathologist</p>
+              <div class="doctor-rating-pill">
+                <span>★★★★★</span>
+                <span>4.8 (5k+ Advice Given)</span>
+              </div>
+              <p class="doctor-exp">
+                <strong>15+ Years of Experience</strong> in Crop Science, Soil Health & Precision Farming.
+              </p>
+              <button class="btn btn-primary" id="viewAdvisorBtn" style="padding:10px 22px; font-size:0.88rem; width:fit-content;">
+                <span>View Profile</span>
+                <span>➔</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Column: 5 Key Capabilities Checklist -->
+          <div class="advisor-checklist">
+            <div class="check-item">
+              <div class="check-circle">✔</div>
+              <div class="check-text">Crop Disease Solution & Organic Remediation</div>
+            </div>
+            <div class="check-item">
+              <div class="check-circle">✔</div>
+              <div class="check-text">Best Crop Selection Based on Soil & Climate</div>
+            </div>
+            <div class="check-item">
+              <div class="check-circle">✔</div>
+              <div class="check-text">Soil Health Tips & Nutrient Balancing</div>
+            </div>
+            <div class="check-item">
+              <div class="check-circle">✔</div>
+              <div class="check-text">Modern Farming & High-Density Cultivation Techniques</div>
+            </div>
+            <div class="check-item">
+              <div class="check-circle">✔</div>
+              <div class="check-text">Seasonal Guidance & Real-Time Weather Forecasts</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive "Ask Your Question" Widget -->
+      <div class="ask-question-box">
+        <div class="ask-avatar-box">
+          <img 
+            src="images/farmer_ask.jpg" 
+            alt="Farmer asking question - Krishi Sansar" 
+            class="ask-avatar-img"
+          >
+          <div>
+            <h4 class="ask-avatar-title">Ask Your Question</h4>
+            <p class="ask-avatar-sub">Get instant scientific recommendations from Dr. Ramesh</p>
+          </div>
+        </div>
+
+        <div class="ask-form">
+          <input 
+            type="text" 
+            id="askQuestionInput" 
+            class="ask-input" 
+            placeholder="Type your farming question... (e.g. 'Paddy leaves turning yellow', 'Wheat rust cure')"
+          >
+          <button class="btn btn-primary" id="askQuestionBtn" style="flex-shrink:0;">
+            <span>Ask Now</span>
+            <span>➔</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Interactive AI Crop Doctor Response Card -->
+      <div class="ai-answer-card" id="aiAnswerCard">
+        <div class="ai-answer-header">
+          <span>🌿</span>
+          <span id="aiAnswerHeaderTitle">Instant Crop Doctor Recommendation</span>
+        </div>
+        <div class="ai-answer-body" id="aiAnswerBody">
+          <!-- Populated by JavaScript -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       5. ABOUT SECTION
+       =================================================================== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <span class="leaf-icon">🌿</span>
+          <span>About Krishi Sansar</span>
+          <span class="leaf-icon">🌿</span>
+        </div>
+        <h2 class="section-subtitle">
+          Our Mission is to Support Farmers and Build a Green, Prosperous India
+        </h2>
+      </div>
+
+      <div class="about-grid">
+        <!-- Left Story & Stats Column -->
+        <div class="about-content">
+          <p class="about-story">
+            <strong>Krishi Sansar</strong> is an online platform for farmers, offering quality seeds, fertilizers, farm tools, and expert crop advice. Our aim is to support farmers with smart and modern farming solutions for a better tomorrow.
+          </p>
+
+          <!-- 4 Pillars with Checkmarks -->
+          <div class="about-pillars">
+            <div class="about-pillar-item">
+              <div class="about-check">✔</div>
+              <div class="about-pillar-text">Trusted by Thousands of Farmers across 15+ Indian states</div>
+            </div>
+            <div class="about-pillar-item">
+              <div class="about-check">✔</div>
+              <div class="about-pillar-text">Quality & Affordable Products sourced directly from certified labs</div>
+            </div>
+            <div class="about-pillar-item">
+              <div class="about-check">✔</div>
+              <div class="about-pillar-text">Expert Guidance 24/7 by accredited agronomists and soil scientists</div>
+            </div>
+            <div class="about-pillar-item">
+              <div class="about-check">✔</div>
+              <div class="about-pillar-text">Support for Sustainable Farming preserving mother earth's health</div>
+            </div>
+          </div>
+
+          <!-- Animated Stat Counters -->
+          <div class="about-stats-row">
+            <div class="stat-box">
+              <div class="stat-number" data-target="50000" data-suffix="+">50,000+</div>
+              <div class="stat-label">Happy Farmers</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number" data-target="1200" data-suffix="+">1,200+</div>
+              <div class="stat-label">Quality Products</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number" data-target="98" data-suffix="%">98%</div>
+              <div class="stat-label">Crop Success Rate</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number" data-target="15" data-suffix="+">15+</div>
+              <div class="stat-label">States Covered</div>
+            </div>
+          </div>
+
+          <button class="btn btn-primary" onclick="showToast('Krishi Sansar was founded with a single mission: To make every Indian farmer self-reliant and profitable.', 'info')">
+            <span>Know More</span>
+            <span>➔</span>
+          </button>
+        </div>
+
+        <!-- Right Visual Column: Circular Seedling Photo -->
+        <div class="about-visual-box">
+          <div class="about-circle-frame">
+            <img 
+              src="images/about_soil_seedling.jpg" 
+              alt="Hands holding rich fertile soil with green sapling - Krishi Sansar" 
+              class="about-soil-img"
+            >
+          </div>
+          <div class="about-floating-badge">
+            <span>🌱</span>
+            <span>100% Sustainable & Eco-Friendly</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       6. CONTACT SECTION
+       =================================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <span class="leaf-icon">🌿</span>
+          <span>Contact Us</span>
+          <span class="leaf-icon">🌿</span>
+        </div>
+        <h2 class="section-subtitle">
+          We're here to help you!
+        </h2>
+        <p class="section-description">
+          Have questions about seeds, fertilizers, farm tools, or crop health? Our agricultural specialists and support staff are here to assist every farmer friend.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Left Column: Info Cards & Social Channels -->
+        <div class="contact-info-col">
+          <div class="contact-info-list">
+            <!-- Phone Card (Click to call) -->
+            <a href="tel:+919876543210" class="contact-card-item" title="Click to Call Helpline">
+              <div class="contact-icon-bubble">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="contact-meta">
+                <div class="contact-meta-header">
+                  <h4>+91 98765 43210</h4>
+                  <span class="contact-status-badge">● Active Now</span>
+                </div>
+                <p>Mon - Sat, 9AM - 6PM • Toll-Free Kisan Helpline</p>
+              </div>
+              <span class="contact-card-arrow">➔</span>
+            </a>
+
+            <!-- Email Card (Click to email) -->
+            <a href="mailto:info@krishisansar.in" class="contact-card-item" title="Click to Send Email">
+              <div class="contact-icon-bubble">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1-0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-meta">
+                <div class="contact-meta-header">
+                  <h4>info@krishisansar.in</h4>
+                  <span class="contact-reply-time">⚡ ~2h reply</span>
+                </div>
+                <p>Direct response for product orders & inquiries</p>
+              </div>
+              <span class="contact-card-arrow">➔</span>
+            </a>
+
+            <!-- Location Card (Google Maps) -->
+            <a href="https://maps.google.com/?q=Ranchi,+Jharkhand,+India" target="_blank" rel="noopener" class="contact-card-item" title="View on Google Maps">
+              <div class="contact-icon-bubble">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="contact-meta">
+                <div class="contact-meta-header">
+                  <h4>Ranchi, Jharkhand, India</h4>
+                </div>
+                <p>Regional Agri-Hub & Distribution Headquarters</p>
+              </div>
+              <span class="contact-card-arrow">➔</span>
+            </a>
+
+            <!-- WhatsApp Quick Connect Banner Card -->
+            <a href="https://wa.me/919876543210?text=Namaste%20Krishi%20Sansar!%20I%20have%20a%20farming%20question." target="_blank" rel="noopener" class="whatsapp-card-item">
+              <div class="wa-icon-bubble">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.04 7.53C8.87 7.53 8.61 7.59 8.38 7.84C8.16 8.09 7.54 8.68 7.54 9.87C7.54 11.07 8.41 12.22 8.53 12.38C8.65 12.55 10.22 14.97 12.63 16C14.63 16.86 15.04 16.69 15.48 16.65C15.92 16.61 16.9 16.06 17.11 15.48C17.31 14.89 17.31 14.39 17.25 14.28C17.19 14.18 17.03 14.12 16.78 14C16.53 13.88 15.31 13.28 15.08 13.19C14.85 13.11 14.69 13.07 14.52 13.32C14.36 13.57 13.89 14.12 13.74 14.28C13.6 14.45 13.45 14.47 13.2 14.35C12.95 14.22 11.89 13.88 10.63 12.75C9.65 11.88 8.99 10.8 8.87 10.59C8.75 10.38 8.85 10.27 8.98 10.14C9.09 10.03 9.23 9.85 9.35 9.71C9.48 9.56 9.52 9.46 9.6 9.29C9.69 9.13 9.64 8.98 9.58 8.86C9.52 8.73 9.07 7.63 8.88 7.18C8.7 6.74 8.52 6.8 8.38 6.79L8 6.79C7.83 6.79 7.6 6.86 7.42 7.05"></path>
+                </svg>
+              </div>
+              <div class="wa-text-col">
+                <strong>Instant WhatsApp Kisan Chat</strong>
+                <span>Direct advisory & quick order queries • 24/7</span>
+              </div>
+              <span class="wa-chat-badge">Chat ➔</span>
+            </a>
+          </div>
+
+          <!-- Social Media Follow (Authentic Brand Badges as seen in Mockup) -->
+          <div class="contact-social-group">
+            <h4 class="social-title">Follow Us</h4>
+            <div class="social-icons-row">
+              <a href="https://facebook.com" target="_blank" rel="noopener" class="social-brand-btn fb-btn" title="Follow Krishi Sansar on Facebook" aria-label="Facebook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener" class="social-brand-btn yt-btn" title="Watch farming tutorials on YouTube" aria-label="YouTube">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener" class="social-brand-btn ig-btn" title="Follow Krishi Sansar on Instagram" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-brand-btn in-btn" title="Connect on LinkedIn" aria-label="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive Form matching Mockup -->
+        <div class="contact-form-col">
+          <div class="contact-form-card">
+            <!-- Quick Inquiry Topic Pills -->
+            <div class="form-topics-header">
+              <span class="topic-label">Inquiring About:</span>
+              <div class="form-topic-pills" id="contactTopicPills">
+                <button type="button" class="topic-pill active" data-topic="General Inquiry">🌿 General</button>
+                <button type="button" class="topic-pill" data-topic="Seeds Booking">🌾 Seeds</button>
+                <button type="button" class="topic-pill" data-topic="Fertilizers">🧪 Fertilizer</button>
+                <button type="button" class="topic-pill" data-topic="Machinery">🚜 Tractor & Tools</button>
+                <button type="button" class="topic-pill" data-topic="Doctor Advice">👨‍🔬 Advisor</button>
+              </div>
+            </div>
+
+            <form id="contactForm">
+              <input type="hidden" id="contactTopic" value="General Inquiry">
+
+              <div class="form-group-pill">
+                <input 
+                  type="text" 
+                  id="contactName" 
+                  class="form-input-pill" 
+                  placeholder="Your Name *" 
+                  required
+                >
+                <span class="input-icon">👤</span>
+              </div>
+
+              <div class="form-group-pill">
+                <input 
+                  type="email" 
+                  id="contactEmail" 
+                  class="form-input-pill" 
+                  placeholder="Your Email *" 
+                  required
+                >
+                <span class="input-icon">✉️</span>
+              </div>
+
+              <div class="form-group-pill">
+                <input 
+                  type="tel" 
+                  id="contactPhone" 
+                  class="form-input-pill" 
+                  placeholder="Your Mobile Number (+91 ...)" 
+                >
+                <span class="input-icon">📱</span>
+              </div>
+
+              <div class="form-group-pill">
+                <textarea 
+                  id="contactMessage" 
+                  class="form-textarea-pill" 
+                  placeholder="Your Message *" 
+                  maxlength="500" 
+                  required
+                ></textarea>
+                <div class="textarea-bottom-row">
+                  <span class="input-icon-textarea">💬</span>
+                  <span class="char-counter" id="charCounter">0 / 500</span>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-pill-submit" id="contactSubmitBtn">
+                <span>Send Message</span>
+                <span class="btn-arrow-icon">➔</span>
+              </button>
+            </form>
+
+            <!-- Success Confirmation State (Hidden initially) -->
+            <div class="contact-success-box" id="contactSuccessBox" style="display: none;">
+              <div class="success-icon-ring">✓</div>
+              <h3 class="success-title">Message Sent Successfully!</h3>
+              <p class="success-desc" id="successDesc">
+                Thank you! Your inquiry has been routed to our Ranchi agriculture support desk. A representative will contact you shortly.
+              </p>
+              <div class="success-actions">
+                <button type="button" class="btn btn-secondary" id="sendAnotherBtn">Send Another Message</button>
+                <a href="https://wa.me/919876543210" target="_blank" rel="noopener" class="btn btn-primary" style="background:#25d366; border-color:#25d366;">
+                  <span>Chat on WhatsApp</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Banner / Slogan matching Mockup -->
+      <div class="together-bottom-bar">
+        <div class="together-decor-leaf left-leaf">🌿</div>
+        <div class="together-slogan-wrapper">
+          <span class="slogan-sparkle">✦</span>
+          <span class="together-cursive-text">Together for Better Farming</span>
+          <span class="slogan-sparkle">✦</span>
+        </div>
+        <div class="together-decor-leaf right-leaf">🌿</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       FOOTER
+       =================================================================== -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Mission -->
+        <div class="footer-col">
+          <div style="margin-bottom:16px;">
+            <a href="#home" style="display:inline-block;">
+              <img src="images/logo.jpg" alt="Krishi Sansar Logo" class="footer-logo-img" style="height:56px; width:auto; background:#ffffff; padding:6px 14px; border-radius:12px; box-shadow:0 4px 14px rgba(0,0,0,0.18);">
+            </a>
+          </div>
+          <p class="footer-about-text">
+            Krishi Sansar is committed to modernizing Indian farming by providing high-quality inputs, scientific crop guidance, and reliable rural delivery.
+          </p>
+          <div style="font-size:0.86rem; color:#86efac; font-weight:600;">
+            🌾 जय जवान, जय किसान!
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4 id="footerQuickLinksTitle">Quick Links</h4>
+          <ul class="footer-links-list" id="footerQuickLinksList">
+            <li class="footer-link-item"><a href="#home">Home</a></li>
+            <li class="footer-link-item"><a href="#products">Products Catalog</a></li>
+            <li class="footer-link-item"><a href="#services">Our Services</a></li>
+            <li class="footer-link-item"><a href="#advisor">Expert Advisor</a></li>
+            <li class="footer-link-item"><a href="#about">About Krishi Sansar</a></li>
+            <li class="footer-link-item"><a href="#contact">Contact Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Popular Categories -->
+        <div class="footer-col">
+          <h4 id="footerCategoriesTitle">Categories</h4>
+          <ul class="footer-links-list" id="footerCategoriesList">
+            <li class="footer-link-item"><a href="#products">High Germination Seeds</a></li>
+            <li class="footer-link-item"><a href="#products">Bio Organic Fertilizers</a></li>
+            <li class="footer-link-item"><a href="#products">Precision Hand Tools</a></li>
+            <li class="footer-link-item"><a href="#products">Tractors & Power Tillers</a></li>
+            <li class="footer-link-item"><a href="#services">Soil Testing Laboratory</a></li>
+            <li class="footer-link-item"><a href="#services">Solar Drip Irrigation</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter -->
+        <div class="footer-col">
+          <h4 id="footerBulletinTitle">Kisan Bulletin</h4>
+          <p class="newsletter-text" id="footerNewsletterText">
+            Subscribe for free weekly mandi prices, monsoon updates, and expert crop disease advisories.
+          </p>
+          <form id="newsletterForm" class="newsletter-box">
+            <input type="email" id="newsletterEmail" class="newsletter-input" placeholder="Your email address" required>
+            <button type="submit" class="newsletter-btn" id="newsletterBtn">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <div id="footerCopyright">
+          © 2026 <strong>Krishi Sansar</strong>. All Rights Reserved. Built with ❤️ for Indian Farmers.
+        </div>
+        <div id="footerLegalLinks" style="display:flex; gap:20px;">
+          <a href="#home" style="color:#94a3b8;">Privacy Policy</a>
+          <a href="#home" style="color:#94a3b8;">Terms of Service</a>
+          <a href="#home" style="color:#94a3b8;">Kisan Helpline</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       FLOATING ACTION BUTTONS (Enhanced Call & WhatsApp Messaging)
+       =================================================================== -->
+  <div class="floating-actions" id="floatingActions">
+    <!-- Scroll to Top -->
+    <button class="fab-btn fab-top" id="scrollTopBtn" title="Scroll to Top" aria-label="Scroll to top">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
+      <span class="fab-tooltip">Back to Top</span>
+    </button>
+
+    <!-- Call Helpline Button -->
+    <a href="tel:+919876543210" class="fab-btn fab-call" id="fabCallBtn" title="Call Kisan Helpline" aria-label="Call Helpline">
+      <div class="fab-icon-wrap">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+      </div>
+      <span class="fab-tooltip">
+        <span class="tooltip-title">Call Kisan Helpline</span>
+        <span class="tooltip-sub">+91 98765 43210 (Toll-Free)</span>
+      </span>
+      <span class="fab-ping-ring"></span>
+    </a>
+
+    <!-- WhatsApp Message Button -->
+    <a href="https://wa.me/919876543210?text=Namaste%20Krishi%20Sansar!%20I%20need%20farming%20advice%20and%20product%20inquiry." target="_blank" rel="noopener" class="fab-btn fab-whatsapp" id="fabWhatsAppBtn" title="Chat with Agri Expert on WhatsApp" aria-label="Chat on WhatsApp">
+      <div class="fab-icon-wrap">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.04 7.53C8.87 7.53 8.61 7.59 8.38 7.84C8.16 8.09 7.54 8.68 7.54 9.87C7.54 11.07 8.41 12.22 8.53 12.38C8.65 12.55 10.22 14.97 12.63 16C14.63 16.86 15.04 16.69 15.48 16.65C15.92 16.61 16.9 16.06 17.11 15.48C17.31 14.89 17.31 14.39 17.25 14.28C17.19 14.18 17.03 14.12 16.78 14C16.53 13.88 15.31 13.28 15.08 13.19C14.85 13.11 14.69 13.07 14.52 13.32C14.36 13.57 13.89 14.12 13.74 14.28C13.6 14.45 13.45 14.47 13.2 14.35C12.95 14.22 11.89 13.88 10.63 12.75C9.65 11.88 8.99 10.8 8.87 10.59C8.75 10.38 8.85 10.27 8.98 10.14C9.09 10.03 9.23 9.85 9.35 9.71C9.48 9.56 9.52 9.46 9.6 9.29C9.69 9.13 9.64 8.98 9.58 8.86C9.52 8.73 9.07 7.63 8.88 7.18C8.7 6.74 8.52 6.8 8.38 6.79L8 6.79C7.83 6.79 7.6 6.86 7.42 7.05"></path>
+        </svg>
+      </div>
+      <span class="fab-online-dot" title="Advisor Online"></span>
+      <span class="fab-tooltip">
+        <span class="tooltip-title">Chat with Agri Expert</span>
+        <span class="tooltip-sub">● Instant 24/7 WhatsApp Support</span>
+      </span>
+      <span class="fab-pulse-wave"></span>
+    </a>
+  </div>
+
+  <!-- ===================================================================
+       PRODUCT DETAILS QUICK VIEW MODAL
+       =================================================================== -->
+  <div class="modal-overlay" id="productModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeProductModal" aria-label="Close modal">✕</button>
+      <div style="display:grid; grid-template-columns: 1fr; gap:20px;">
+        <div style="height:240px; border-radius:14px; overflow:hidden; position:relative;">
+          <img id="modalProductImg" src="" alt="Product image" style="width:100%; height:100%; object-fit:cover;">
+          <span id="modalProductBadge" class="product-badge" style="top:12px; left:12px;"></span>
+        </div>
+        <div>
+          <h2 id="modalProductTitle" style="font-size:1.6rem; color:#14532d; font-weight:800; margin-bottom:4px;"></h2>
+          <p id="modalProductSubtitle" style="color:#64748b; font-size:0.92rem; margin-bottom:12px;"></p>
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
+            <span id="modalProductPrice" style="font-size:1.35rem; font-weight:800; color:#ea580c;"></span>
+            <span id="modalProductRating" style="font-weight:600; color:#f59e0b; font-size:0.9rem;"></span>
+          </div>
+          <p id="modalProductDesc" style="font-size:0.92rem; color:#334155; line-height:1.6; margin-bottom:18px;"></p>
+
+          <h4 id="modalSpecsTitle" style="font-size:1rem; color:#15803d; font-weight:700; margin-bottom:8px;">Technical Specifications</h4>
+          <ul id="modalProductSpecs" style="margin-bottom:18px;"></ul>
+
+          <h4 id="modalBenefitsTitle" style="font-size:1rem; color:#15803d; font-weight:700; margin-bottom:8px;">Key Farmer Benefits</h4>
+          <ul id="modalProductBenefits" style="margin-bottom:24px;"></ul>
+
+          <div style="display:flex; gap:12px;">
+            <button class="btn btn-primary" id="modalOrderBtn" style="flex-grow:1; padding:12px;">
+              <span>Order Now / Book Delivery</span>
+              <span>➔</span>
+            </button>
+            <a href="https://wa.me/919876543210" target="_blank" rel="noopener" class="btn btn-secondary" id="modalWaBtn" style="border-color:#25d366; color:#128c7e;">
+              <span>Chat on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       EXPERT ADVISOR PROFILE MODAL
+       =================================================================== -->
+  <div class="modal-overlay" id="advisorModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeAdvisorModal" aria-label="Close modal">✕</button>
+      <div style="text-align:center; margin-bottom:20px;">
+        <img 
+          src="images/doctor_ramesh.jpg" 
+          alt="Dr. Ramesh Kumar" 
+          style="width:110px; height:110px; border-radius:50%; object-fit:cover; margin:0 auto 12px; border:4px solid #86efac;"
+        >
+        <h3 id="advisorModalName" style="font-size:1.5rem; font-weight:800; color:#14532d;">Dr. Ramesh Kumar</h3>
+        <p id="advisorModalDesig" style="color:#16a34a; font-weight:600; font-size:0.95rem;">Senior Agriculture Scientist & Agronomy Head</p>
+        <div id="advisorModalRating" style="color:#ea580c; font-weight:700; font-size:0.85rem; margin-top:4px;">★★★★★ 4.8 Rating (5,000+ Consultations)</div>
+      </div>
+
+      <div id="advisorModalBio" style="background:#f8fafc; border-radius:12px; padding:18px; margin-bottom:20px; font-size:0.92rem; color:#334155; line-height:1.6;">
+        <strong>Qualifications & Research:</strong><br>
+        • Ph.D. in Soil Science & Agronomy (ICAR - IARI, New Delhi)<br>
+        • Former Principal Scientist at Birsa Agricultural University, Ranchi<br>
+        • Specialization: Organic Soil Regeneration, Paddy Stem Borer Eradication, High-Density Vegetable Cropping.<br>
+        • Published 40+ Research Papers on sustainable smallholder farming in Eastern India.
+      </div>
+
+      <h4 id="advisorModalConsultTitle" style="font-size:1rem; color:#15803d; font-weight:700; margin-bottom:10px;">Book a 1-on-1 Phone / Field Consultation</h4>
+      <form id="advisorBookingForm">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px;">
+          <input type="text" id="advisorModalNameInput" placeholder="Farmer Name" class="form-input" required>
+          <input type="tel" id="advisorModalPhoneInput" placeholder="Mobile Number" class="form-input" required>
+        </div>
+        <div style="margin-bottom:16px;">
+          <select id="advisorModalTopicSelect" class="form-input" required>
+            <option value="">Select Topic of Consultation</option>
+            <option value="crop-disease">Crop Disease & Pest Diagnosis</option>
+            <option value="soil-test">Soil Health & Fertilizer Recommendation</option>
+            <option value="crop-choice">Seasonal Crop Selection</option>
+            <option value="drip">Drip Irrigation & Subsidy Guidance</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary" id="bookConsultationBtn" style="width:100%; padding:12px;">
+          <span>Confirm Consultation Slot (Free)</span>
+          <span>➔</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       SLIDE-OUT SHOPPING CART DRAWER
+       =================================================================== -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay">
+    <div class="cart-drawer" id="cartDrawer">
+      <!-- Drawer Header -->
+      <div class="cart-drawer-header">
+        <div class="cart-drawer-title">
+          <span class="cart-title-icon">🛒</span>
+          <h3>Agri Shopping Cart</h3>
+          <span class="cart-items-pill" id="cartItemsPill">0 Items</span>
+        </div>
+        <button class="cart-close-btn" id="closeCartDrawer" aria-label="Close Cart Drawer">✕</button>
+      </div>
+
+      <!-- Free Delivery Progress Bar -->
+      <div class="cart-delivery-bar">
+        <div class="delivery-status-text" id="deliveryStatusText">
+          <span>🚚 Free Farmer Delivery over ₹499</span>
+        </div>
+        <div class="delivery-progress-track">
+          <div class="delivery-progress-fill" id="deliveryProgressFill" style="width: 0%;"></div>
+        </div>
+      </div>
+
+      <!-- Cart Items List Container -->
+      <div class="cart-drawer-body" id="cartDrawerBody">
+        <!-- Populated dynamically by script.js -->
+      </div>
+
+      <!-- Cart Summary & Checkout Footer -->
+      <div class="cart-drawer-footer" id="cartDrawerFooter">
+        <div class="cart-summary-row">
+          <span>Items Subtotal:</span>
+          <span id="cartSubtotal" class="summary-val">₹0</span>
+        </div>
+        <div class="cart-summary-row delivery-row">
+          <span>Delivery to Village:</span>
+          <span id="cartDeliveryCharge" class="summary-val free-delivery">FREE</span>
+        </div>
+        <div class="cart-summary-total">
+          <span>Total Amount:</span>
+          <span id="cartTotal" class="total-val">₹0</span>
+        </div>
+
+        <div class="cart-actions-group">
+          <button class="btn btn-primary btn-checkout" id="cartCheckoutBtn">
+            <span>Confirm Order (COD Available)</span>
+            <span>➔</span>
+          </button>
+          <a href="#" class="btn btn-secondary btn-whatsapp-order" id="cartWhatsAppBtn" target="_blank" rel="noopener">
+            <span>Order via WhatsApp</span>
+            <span>💬</span>
+          </a>
+        </div>
+        <p class="cart-guarantee-note">🔒 100% Certified Genuine Agri Inputs • Pay on Delivery (COD)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
